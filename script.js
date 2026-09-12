@@ -23,6 +23,41 @@ revealOnScroll();
 
 
 /* =========================
+   MOBILE MENU
+========================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const menuClose = document.getElementById("menuClose");
+
+    if (!menuToggle || !mobileMenu || !menuClose) {
+        return;
+    }
+
+    menuToggle.addEventListener("click", function () {
+        mobileMenu.classList.add("active");
+    });
+
+    menuClose.addEventListener("click", function () {
+        mobileMenu.classList.remove("active");
+    });
+
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+
+    mobileLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+            mobileMenu.classList.remove("active");
+        });
+
+    });
+
+});
+
+
+/* =========================
    BOOKING FORM
 ========================= */
 
@@ -40,8 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         event.preventDefault();
 
-        /* Required fields check */
-
         const requiredFields = bookingForm.querySelectorAll(
             "input[required], select[required]"
         );
@@ -53,9 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
         }
-
-
-        /* Date check */
 
         if (bookingDate && bookingDate.value) {
 
@@ -90,9 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
         }
-
-
-        /* SUCCESS */
 
         formSuccess.style.display = "block";
 
@@ -135,17 +162,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
