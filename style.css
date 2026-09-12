@@ -206,7 +206,7 @@ body {
             rgba(0, 0, 0, 0.65) 45%,
             rgba(0, 0, 0, 0.25) 100%
         ),
-        url("IMAGES/Restaurant.jpg");
+        url("IMAGES/Zesta-Restaurant.webp.webp");
 
     background-size: cover;
     background-position: center;
@@ -1400,14 +1400,26 @@ body {
 
     /* HERO */
 
-    .hero {
-        width: 100%;
-        min-height: 100vh;
-        padding: 120px 6% 80px;
-        text-align: center;
-        justify-content: center;
-        background-position: center;
-    }
+   .hero {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 6% 80px;
+    text-align: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.70) 0%,
+            rgba(0, 0, 0, 0.45) 50%,
+            rgba(0, 0, 0, 0.25) 100%
+        ),
+        url("images/Zesta-Restaurant.webp.webp");
+
+    background-size: cover;
+    background-position: center;
+}
+    
 
     .hero-content {
         width: 100%;
