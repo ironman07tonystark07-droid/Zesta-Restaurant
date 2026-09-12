@@ -206,7 +206,7 @@ body {
             rgba(0, 0, 0, 0.65) 45%,
             rgba(0, 0, 0, 0.25) 100%
         ),
-        url("images/Zesta-Restaurant.webp");
+        url("images/hero.webp");
 
     background-size: cover;
     background-position: center;
@@ -1414,7 +1414,7 @@ body {
             rgba(0, 0, 0, 0.45) 50%,
             rgba(0, 0, 0, 0.25) 100%
         ),
-        url("images/Zesta-Restaurant.webp");
+        url("images/hero.webp");
 
     background-size: cover;
     background-position: center;
